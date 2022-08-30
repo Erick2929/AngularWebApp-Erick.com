@@ -10,11 +10,11 @@ export class PromotionService {
 
   constructor() { }
 
-  getDishes(): Promotion[] {
+  getPromotions(): Promotion[] {
     return PROMOTIONS;
   }
 
-  getDish(id: string): Promotion {
+  getPromotion(id: string): Promotion {
     return PROMOTIONS.filter((promo) => (promo.id === id)) [0];
   }
 
